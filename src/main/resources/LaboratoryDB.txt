@@ -1,0 +1,51 @@
+{
+  "reports": {},
+  "newReportsID": [],
+  "assistantsReportsId": {},
+  "doctorsReportsId": {},
+  "medPersonalsByLogin": {
+    "doctor": {
+      "login": "doctor",
+      "pass": "doctor",
+      "position": "DOCTOR",
+      "name": "Xouse",
+      "surname": "Laurie",
+      "dateOfBirth": {
+        "year": 0,
+        "month": 2,
+        "day": 2
+      },
+      "phoneNumber": "+38093888-88-88",
+      "email": "xouse@gmail.com"
+    },
+    "assis": {
+      "login": "assis",
+      "pass": "assis",
+      "position": "ASSISTANT",
+      "name": "Assis",
+      "surname": "Assist",
+      "dateOfBirth": {
+        "year": 0,
+        "month": 1,
+        "day": 3
+      },
+      "phoneNumber": "+38093999-99-99",
+      "email": "assist@gmail.com"
+    },
+    "admin": {
+      "login": "admin",
+      "pass": "admin",
+      "position": "HEAD",
+      "name": "Adam",
+      "surname": "Smith",
+      "dateOfBirth": {
+        "year": 0,
+        "month": 1,
+        "day": 1
+      },
+      "phoneNumber": "+38093777-77-77",
+      "email": "adam@gmail.com"
+    }
+  },
+  "patientsReports": {}
+}

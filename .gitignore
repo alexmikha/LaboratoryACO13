@@ -1,0 +1,7 @@
+.idea/
+out/
+lib/
+*.xml
+*.jfd
+*.iml
+*.md
