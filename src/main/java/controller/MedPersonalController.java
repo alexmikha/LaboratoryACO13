@@ -4,6 +4,7 @@ import main.java.exceptions.LoginException;
 import main.java.exceptions.RegisterException;
 import main.java.model.MedPersonal;
 import main.java.model.Position;
+import main.java.utils.DBUtils;
 
 import java.time.LocalDate;
 
@@ -16,4 +17,6 @@ public interface MedPersonalController {
 
     boolean register(String name, String surname, LocalDate dateOfBirth, String phoneNumber,
                          String email,  String login, String pass, Position position) throws RegisterException;
+
+
 }

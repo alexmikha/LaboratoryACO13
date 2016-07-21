@@ -20,12 +20,17 @@ public class User implements Comparable<User>, Serializable {
         this.email = email;
     }
 
+    public User() {
+
+    }
+
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public String setName(String name) {
         this.name = name;
+        return name;
     }
 
     public String getSurname() {

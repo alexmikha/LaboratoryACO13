@@ -19,6 +19,13 @@ public class MedPersonal extends User {
         this.position = position;
     }
 
+    public MedPersonal() {
+        super();
+
+    }
+
+
+
     public Position getPosition() {
         return position;
     }

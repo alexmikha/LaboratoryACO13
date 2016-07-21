@@ -8,7 +8,7 @@
       "login": "doctor",
       "pass": "doctor",
       "position": "DOCTOR",
-      "name": "Xouse",
+      "name": "House",
       "surname": "Laurie",
       "dateOfBirth": {
         "year": 0,
@@ -22,7 +22,7 @@
       "login": "assis",
       "pass": "assis",
       "position": "ASSISTANT",
-      "name": "Assis",
+      "name": "Assist",
       "surname": "Assist",
       "dateOfBirth": {
         "year": 0,

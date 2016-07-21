@@ -38,4 +38,52 @@ public class LaboratoryDB {
     public static LaboratoryDB create() {
         return null;
     }
+
+    public Map<String, Report> getReports() {
+        return reports;
+    }
+
+    public void setReports(Map<String, Report> reports) {
+        this.reports = reports;
+    }
+
+    public Queue<String> getNewReportsID() {
+        return newReportsID;
+    }
+
+    public void setNewReportsID(Queue<String> newReportsID) {
+        this.newReportsID = newReportsID;
+    }
+
+    public Map<MedPersonal, List<String>> getAssistantsReportsId() {
+        return assistantsReportsId;
+    }
+
+    public void setAssistantsReportsId(Map<MedPersonal, List<String>> assistantsReportsId) {
+        this.assistantsReportsId = assistantsReportsId;
+    }
+
+    public Map<MedPersonal, List<String>> getDoctorsReportsId() {
+        return doctorsReportsId;
+    }
+
+    public void setDoctorsReportsId(Map<MedPersonal, List<String>> doctorsReportsId) {
+        this.doctorsReportsId = doctorsReportsId;
+    }
+
+    public Map<String, MedPersonal> getMedPersonalsByLogin() {
+        return medPersonalsByLogin;
+    }
+
+    public void setMedPersonalsByLogin(Map<String, MedPersonal> medPersonalsByLogin) {
+        this.medPersonalsByLogin = medPersonalsByLogin;
+    }
+
+    public Map<Patient, List<String>> getPatientsReports() {
+        return patientsReports;
+    }
+
+    public void setPatientsReports(Map<Patient, List<String>> patientsReports) {
+        this.patientsReports = patientsReports;
+    }
 }
