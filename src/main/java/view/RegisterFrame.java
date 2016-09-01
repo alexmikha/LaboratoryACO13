@@ -1,20 +1,16 @@
-/*
- * Created by JFormDesigner on Wed Jul 20 19:34:15 EEST 2016
- */
+package view;
 
-package main.java.view;
+import db.LaboratoryDB;
+import exceptions.RegisterException;
+import model.MedPersonal;
 
-import main.java.db.LaboratoryDB;
-import main.java.exceptions.RegisterException;
-import main.java.model.MedPersonal;
-
-import java.awt.*;
-import java.awt.event.*;
-import java.time.LocalDate;
 import javax.swing.*;
-
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ItemEvent;
+import java.time.LocalDate;
 /**
- * @author Alex Alex
+ * Created by Mi on 01.09.2016.
  */
 public class RegisterFrame extends JFrame {
 
@@ -93,10 +89,10 @@ public class RegisterFrame extends JFrame {
 
             // JFormDesigner evaluation mark
             panel1.setBorder(new javax.swing.border.CompoundBorder(
-                new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                    "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                    javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 1),
-                    java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+                    new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                            "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                            javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 1),
+                            java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
 
             panel1.setLayout(null);
 
@@ -186,10 +182,10 @@ public class RegisterFrame extends JFrame {
 
                 //---- comboBox1 ----
                 comboBox1.setModel(new DefaultComboBoxModel<>(new String[] {
-                    "Head",
-                    "Doctor",
-                    "Assistant",
-                    "Patient"
+                        "Head",
+                        "Doctor",
+                        "Assistant",
+                        "Patient"
                 }));
                 comboBox1.setFont(new Font("sansserif", Font.PLAIN, 14));
                 comboBox1.setAutoscrolls(true);

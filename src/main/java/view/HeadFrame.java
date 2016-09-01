@@ -1,20 +1,20 @@
-package main.java.view;
+package view;
 
-import main.java.db.LaboratoryDB;
-import main.java.model.MedPersonal;
+import controller.HeadController;
+import db.LaboratoryDB;
+import model.MedPersonal;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
-/**
- * Created by mi on 19.07.2016.
- */
+
 public class HeadFrame extends JFrame{
+    private HeadController controller;
 
     public HeadFrame(MedPersonal result, LaboratoryDB db) {
-   //     setTitle("HeadFrame");
- //       setSize(600, 400);
+        //     setTitle("HeadFrame");
+        //       setSize(600, 400);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
@@ -26,7 +26,7 @@ public class HeadFrame extends JFrame{
 
         RegisterFrame registerFrame = new RegisterFrame();
         registerFrame.start();
-        }
+    }
 
 
     private void okButtonActionPerformed(ActionEvent e) {
@@ -93,10 +93,10 @@ public class HeadFrame extends JFrame{
 
             // JFormDesigner evaluation mark
             panel1.setBorder(new javax.swing.border.CompoundBorder(
-                new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                    "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                    javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-                    java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+                    new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                            "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                            javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+                            java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
 
             panel1.setLayout(null);
 
@@ -255,3 +255,6 @@ public class HeadFrame extends JFrame{
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 
 }
+
+
+

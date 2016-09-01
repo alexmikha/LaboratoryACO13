@@ -1,9 +1,9 @@
-package main.java.utils;
+package utils;
 
 import java.io.*;
 
 /**
- * Created by mikhailov on 17.07.16.
+ * Created by gorobec on 17.07.16.
  */
 public class IOUtils {
     public static String readFromFile(String path) throws IOException {

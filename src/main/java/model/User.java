@@ -1,9 +1,11 @@
-package main.java.model;
+package model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-public class User implements Comparable<User>, Serializable {
+public class User implements Comparable<User>, Serializable{
 
 
     protected String name;
@@ -11,6 +13,10 @@ public class User implements Comparable<User>, Serializable {
     protected LocalDate dateOfBirth;
     protected String phoneNumber;
     protected String email;
+
+
+    public User() {
+    }
 
     public User(String name, String surname, LocalDate dateOfBirth, String phoneNumber, String email) {
         this.name = name;
@@ -20,17 +26,12 @@ public class User implements Comparable<User>, Serializable {
         this.email = email;
     }
 
-    public User() {
-
-    }
-
     public String getName() {
         return name;
     }
 
-    public String setName(String name) {
+    public void setName(String name) {
         this.name = name;
-        return name;
     }
 
     public String getSurname() {
@@ -100,29 +101,6 @@ public class User implements Comparable<User>, Serializable {
 
     @Override
     public int compareTo(User o) {
-        if (this == o) return 0;
-
-        if (this.name.equals(o.name)) {
-            return this.name.compareTo(o.name);
-        }
-        if (this.surname.equals(o.surname)) {
-            return this.surname.compareTo(o.surname);
-        }
-        if (!(this.dateOfBirth.getYear() == o.dateOfBirth.getYear())){
-            return this.dateOfBirth.getYear() - o.dateOfBirth.getYear();
-        }
-        if (!(this.dateOfBirth.getMonthValue() == o.dateOfBirth.getMonthValue())){
-            return this.dateOfBirth.getMonthValue() - o.dateOfBirth.getMonthValue();
-        }
-        if (!(this.dateOfBirth.getDayOfMonth() == o.dateOfBirth.getDayOfMonth())){
-            return this.dateOfBirth.getDayOfMonth() - o.dateOfBirth.getDayOfMonth();
-        }
-        if (this.phoneNumber.equals(o.phoneNumber)){
-            return this.phoneNumber.compareTo(o.phoneNumber);
-        }
-        if (this.email.equals(o.email)){
-            return this.email.compareTo(o.email);
-        }
         return 0;
     }
 }

@@ -1,25 +1,18 @@
-/*
- * Created by JFormDesigner on Mon Jul 18 19:09:43 EEST 2016
- */
+package view;
 
-package main.java.view;
-
-import main.java.controller.MedPersonalControllerImpl;
-import main.java.exceptions.LoginException;
-import main.java.model.MedPersonal;
+import controller.MedPersonalControllerImpl;
+import exceptions.LoginException;
+import model.MedPersonal;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
 
-
-/**
- * @author Alex Alex
- */
 public class LoginPassFrame extends JFrame {
 
     private MedPersonalControllerImpl controller;
+
 
     public LoginPassFrame(MedPersonalControllerImpl controller) {
         this.controller = controller;
@@ -83,10 +76,10 @@ public class LoginPassFrame extends JFrame {
 
             // JFormDesigner evaluation mark
             panel1.setBorder(new javax.swing.border.CompoundBorder(
-                new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                    "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                    javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-                    java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+                    new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                            "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                            javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+                            java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
 
             panel1.setLayout(null);
 
@@ -124,19 +117,19 @@ public class LoginPassFrame extends JFrame {
             panel1.add(passwordField1);
             passwordField1.setBounds(43, 53, 82, passwordField1.getPreferredSize().height);
 
-            { // compute preferred size
-                Dimension preferredSize = new Dimension();
-                for(int i = 0; i < panel1.getComponentCount(); i++) {
-                    Rectangle bounds = panel1.getComponent(i).getBounds();
-                    preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
-                    preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
-                }
-                Insets insets = panel1.getInsets();
-                preferredSize.width += insets.right;
-                preferredSize.height += insets.bottom;
-                panel1.setMinimumSize(preferredSize);
-                panel1.setPreferredSize(preferredSize);
-            }
+//            { // compute preferred size
+//                Dimension preferredSize = new Dimension();
+//                for(int i = 0; i < panel1.getComponentCount(); i++) {
+//                    Rectangle bounds = panel1.getComponent(i).getBounds();
+//                    preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
+//                    preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
+//                }
+//                Insets insets = panel1.getInsets();
+//                preferredSize.width += insets.right;
+//                preferredSize.height += insets.bottom;
+//                panel1.setMinimumSize(preferredSize);
+//                panel1.setPreferredSize(preferredSize);
+//            }
         }
         contentPane.add(panel1);
         panel1.setBounds(0, 0, 250, 155);

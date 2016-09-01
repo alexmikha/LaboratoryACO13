@@ -1,8 +1,8 @@
-package main.java.db;
+package db;
 
-import main.java.exceptions.LoginException;
-import main.java.exceptions.RegisterException;
-import main.java.model.*;
+import exceptions.LoginException;
+import exceptions.RegisterException;
+import model.*;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -15,7 +15,6 @@ public class LaboratoryDB {
     private Map<MedPersonal, List<String>> doctorsReportsId = new HashMap<>();
     private Map<String, MedPersonal> medPersonalsByLogin = new HashMap<>();
     private Map<Patient, List<String>> patientsReports = new HashMap<>();
-
 
     public MedPersonal logIn(String login, String password) throws LoginException {
         MedPersonal foundPerson = medPersonalsByLogin.get(login);
@@ -39,51 +38,7 @@ public class LaboratoryDB {
         return null;
     }
 
-    public Map<String, Report> getReports() {
-        return reports;
-    }
-
-    public void setReports(Map<String, Report> reports) {
-        this.reports = reports;
-    }
-
-    public Queue<String> getNewReportsID() {
-        return newReportsID;
-    }
-
-    public void setNewReportsID(Queue<String> newReportsID) {
-        this.newReportsID = newReportsID;
-    }
-
-    public Map<MedPersonal, List<String>> getAssistantsReportsId() {
-        return assistantsReportsId;
-    }
-
-    public void setAssistantsReportsId(Map<MedPersonal, List<String>> assistantsReportsId) {
-        this.assistantsReportsId = assistantsReportsId;
-    }
-
-    public Map<MedPersonal, List<String>> getDoctorsReportsId() {
-        return doctorsReportsId;
-    }
-
-    public void setDoctorsReportsId(Map<MedPersonal, List<String>> doctorsReportsId) {
-        this.doctorsReportsId = doctorsReportsId;
-    }
-
-    public Map<String, MedPersonal> getMedPersonalsByLogin() {
+    public Map<String,MedPersonal> getMedPersonalsByLogin() {
         return medPersonalsByLogin;
-    }
-
-    public void setMedPersonalsByLogin(Map<String, MedPersonal> medPersonalsByLogin) {
-        this.medPersonalsByLogin = medPersonalsByLogin;
-    }
-
-    public Map<Patient, List<String>> getPatientsReports() {
-        return patientsReports;
-    }
-
-    public void setPatientsReports(Map<Patient, List<String>> patientsReports) {
-        this.patientsReports = patientsReports;
     }
 }

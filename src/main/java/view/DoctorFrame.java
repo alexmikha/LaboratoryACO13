@@ -1,15 +1,11 @@
-/*
- * Created by JFormDesigner on Wed Jul 20 02:14:35 EEST 2016
- */
+package view;
 
-package main.java.view;
+import db.LaboratoryDB;
+import model.MedPersonal;
 
-import main.java.db.LaboratoryDB;
-import main.java.model.MedPersonal;
-
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
 
 /**
  * @author Alex Alex
@@ -29,8 +25,8 @@ public class DoctorFrame extends JFrame {
         // TODO add your code here
 
         RegisterFrame registerFrame = new RegisterFrame();
-            registerFrame.start();
-        }
+        registerFrame.start();
+    }
 
     private void okButtonActionPerformed(ActionEvent e) {
         // TODO add your code here
@@ -87,10 +83,10 @@ public class DoctorFrame extends JFrame {
         //======== panel1 ========
         {// JFormDesigner evaluation mark
             panel1.setBorder(new javax.swing.border.CompoundBorder(
-                new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                    "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                    javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 0),
-                    java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+                    new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                            "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                            javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 0),
+                            java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
 
             panel1.setLayout(null);
 

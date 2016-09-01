@@ -1,9 +1,9 @@
-package main.java.model;
+package model;
 
 import java.util.Date;
 
 /**
- * Created by mikhailov on 17.07.16.
+ * Created by gorobec on 17.07.16.
  */
 public class Id {
 //    todo good method

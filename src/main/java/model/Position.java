@@ -1,8 +1,7 @@
-package main.java.model;
+package model;
 
 
 public enum Position {
-
     DOCTOR,
     ASSISTANT,
     HEAD, Position,

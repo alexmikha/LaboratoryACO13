@@ -1,16 +1,15 @@
-package main.java.model;
+package model;
 
 import java.time.LocalDate;
 
 /**
- * Created by mikhailov on 17.07.16.
+ * Created by gorobec on 17.07.16.
  */
 public class MedPersonal extends User {
 
     protected String login;
     protected String pass;
     private Position position;
-
 
     public MedPersonal(String name, String surname, LocalDate dateOfBirth, String phoneNumber, String email, String login, String pass, Position position) {
         super(name, surname, dateOfBirth, phoneNumber, email);
@@ -20,11 +19,8 @@ public class MedPersonal extends User {
     }
 
     public MedPersonal() {
-        super();
 
     }
-
-
 
     public Position getPosition() {
         return position;
@@ -59,7 +55,7 @@ public class MedPersonal extends User {
         MedPersonal that = (MedPersonal) o;
 
         if (login != null ? !login.equals(that.login) : that.login != null) return false;
-        return (pass != null ? !pass.equals(that.pass) : that.pass != null);
+        return (pass != null ? pass.equals(that.pass) : that.pass != null);
 
     }
 
